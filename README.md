@@ -67,3 +67,50 @@ docker-compose up -d
 ```
 
 4. Acceder a Jupyter Lab:
+
+5.http://localhost:8888
+
+5. Acceder a MongoDB:
+mongodb://localhost:27017
+
+## 📁 Estructura del Proyecto
+``` text
+hospital-nosql/
+├── data/                      # Datos de entrada
+│   ├── raw/                   # Datos sin procesar
+│   └── processed/             # Datos procesados
+├── notebooks/                 # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_patient_analysis.ipynb
+│   ├── 03_disease_patterns.ipynb
+│   ├── 04_prediction_model.ipynb
+│   ├── 05_clustering.ipynb
+│   └── 06_anomaly_detection.ipynb
+├── models/                    # Modelos ML entrenados
+├── scripts/                   # Scripts de utilidad
+│   ├── seed_data.py          # Poblar base de datos
+│   └── export_data.py        # Exportar datos
+├── docker/                    # Configuración Docker
+├── docker-compose.yml         # Orquestación de servicios
+├── requirements.txt           # Dependencias Python
+├── .env.example              # Variables de entorno de ejemplo
+└── README.md                 # Este archivo ## 🔧 Configuración
+
+```
+
+### Variables de Entorno (.env)
+
+```env
+MONGO_INITDB_ROOT_USERNAME=admin
+MONGO_INITDB_ROOT_PASSWORD=password
+MONGO_INITDB_DATABASE=hospital_nosql
+JUPYTER_TOKEN=your-secret-token
+```
+
+
+
+## 📚 Proyecto Académico
+
+Corporación Universitaria del Huila (CORHUILA)  
+Ingeniería de Sistemas - 2026A  
+Base de Datos
