@@ -52,3 +52,18 @@ Resultados de modelos de Machine Learning y predicciones.
 
 1. Clonar el repositorio:
 ```bash
+git clone https://github.com/LillyPuentes-2003/sistema-gestion-hospitalaria-nosql.git
+cd hospital-nosql
+```
+
+2. Copiar archivo de variables de entorno:
+```bash
+cp .env.example .env
+```
+
+3. Levantar los servicios:
+```bash
+docker-compose up -d
+```
+
+4. Acceder a Jupyter Lab:
